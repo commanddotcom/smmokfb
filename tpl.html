@@ -1,0 +1,171 @@
+<div id="tpl_accountPage">
+	<div class="content">
+		<div class="row margin-bottom-1em">
+			<div class="col-xs-3">
+				<strong>Аккаунт</strong>
+			</div>
+			<div class="col-xs-9" id="name">
+				<span class="smooth">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span>
+			</div>
+		</div>
+		<div class="row margin-bottom-1em">
+			<div class="col-xs-3">
+			<strong>Баланс</strong>
+			</div>
+			<div class="col-xs-9" id="customer_balance">
+				<span class="smooth">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<span>
+			</div>
+		</div>
+		<div class="row margin-bottom-1em">
+			<div class="col-xs-3">
+			<strong>Скидка</strong>
+			</div>
+			<div class="col-xs-9" id="discount">
+				<span class="smooth">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<span>
+			</div>
+		</div>
+	</div><!-- /.content -->
+	<div class="footer row">
+		<div class="col-xs-6">
+			<a id="btn-help" href="#" class="btn btn-info btn-sm">Помощь</a>
+		</div>
+		<div class="col-xs-6">
+			<a id="btn-logout" href="#" class="btn btn-danger pull-right btn-sm">Выход</a>
+		</div>
+	</div><!-- /.footer -->
+</div>
+<div id="tpl_loginPage">
+	<div class="content style1">
+		<!--<div class="row margin-bottom-1em">
+			<div class="col-xs-12">
+				<div class="alert alert-warning">Вход в систему не выполнен</div>
+			</div>
+		</div> -->
+		<div class="row margin-bottom-1em">
+			<div class="col-xs-12">
+				<div class="welcome">Для начала работы с этим приложением Вам нужно пройти авториацию на сайте.</div>
+			</div>
+		</div>
+		<div class="row margin-bottom-1em">
+			<div class="col-xs-12">
+				<div class="text-center">
+					<a href="#" class="btn btn-primary" id="btn-login">Войти</a>
+				</div>
+			</div>
+		</div>
+		<div class="row margin-bottom-1em">
+			<div class="col-xs-12">
+				<div class="powered">
+					Powered by SMMOK-FB.ru
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="tpl_addCampaign">
+	<form>
+		<div class="content">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form-group">
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" checked id="title_as_url" value="1">
+								<strong>Название совпадает с URL</strong>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row" id="row-title" style="display: none;">
+				<div class="col-md-12">
+					<div class="form-group">
+						<label>Название</label>
+						<input class="form-control" type="text" checked name="campaing_title" value="">
+					</div>
+				</div>
+			</div>
+			
+			<div class="row margin-bottom-1em">	
+				<div class="col-md-12">
+					<div class="input-group">
+						<input readonly type="text" class="form-control input-sm" value="" name="action_url">
+						<span class="input-group-btn"><a href="#" class="btn btn-info btn-sm" id="btn-action_url">Проверить URL</a></span>
+					</div>
+				</div>
+			</div>
+	
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form-group">
+						<label>Тип кампании</label>
+						<select class="form-control" name="action_type">
+							<option>...</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-6">
+					<div class="form-group">
+						<label>Количество </label>
+						<input type="text" class="form-control" name="offerts_q" value="100">
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="form-group">
+						<label>Лимит</label>
+						<input type="text" class="form-control" name="offerts_per_day" value="50">
+					</div>
+				</div>
+			</div>
+			
+
+			<!--
+			<div class="row margin-bottom-1em">
+				<div class="col-md-12">
+					 <a href="#" class="extend-list"> Фильтры  </a> 
+				</div>
+			</div>
+			-->
+			<div class="row filters-input">
+				<div class="col-xs-6">
+					<div class="form-group">
+						<label>Страна</label>
+						<select class="form-control" name="filter_country" fid="country">
+							<option>...</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="form-group">
+						<label>Пол</label>
+						<select class="form-control" name="filter_sex" fid="sex">
+							<option>...</option>
+						</select>
+					</div>
+				</div>
+			</div>	
+			
+		</div><!-- / .content -->
+		<div class="footer row">
+			<div class="col-md-12">
+				<a class="btn btn-success" href="#" role="submit">Создать кампанию</a>
+				<a class="btn btn-danger" href="#" id="btn-close">X</a>
+				<a class="btn btn-default pull-right" href="#" id="btn-help">?</a>
+			</div>
+		</div>
+	</form>
+</div>

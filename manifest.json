@@ -1,0 +1,33 @@
+{
+	"manifest_version": 2,
+	"name": "SMMOK-FB.ru",
+	"description": "Extention for Facebook promotion with SMMOK-FB.ru",
+	"version": "0.0.1",
+	"browser_action": {
+		"default_icon": {
+			"16": "images/logo16x16.png",
+			"32": "images/logo38x38.png"
+		},
+		"default_title": "SMMOK-FB.ru",
+		"default_popup": "popup.html"
+	},
+	"background": {
+		"page": "background.html"
+	},
+	"permissions": [
+		"activeTab",
+		"contextMenus",
+		"tabs",
+		"notifications",
+		"*://smmokfb/*",
+		"*://smmok-fb.ru/*",
+		"*://facebook.com/*",
+		"*://www.facebook.com/*",
+		"*://m.facebook.com/*",
+		"https://ssl.google-analytics.com/*"
+	],
+	"icons": {
+		"16": "images/logo16x16.png",
+		"48": "images/logo38x38.png"
+	}
+}
