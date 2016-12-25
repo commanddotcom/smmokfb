@@ -131,19 +131,17 @@ var App = function() {
 			if (link.indexOf('comment_id=') !== -1) {
 				return 'comment';
 			}
-			if (link.indexOf('/permalink/') !== -1) {
-				return 'post';
-			}
+
 			if (link.indexOf('/posts/') !== -1) {
 				return 'post';
 			}
-			if (link.indexOf('/videos/') !== -1) {
+			if (link.indexOf('/video.php') !== -1 || link.indexOf('/videos/') !== -1) {
 				return 'post';
 			}
-			if (link.indexOf('/permalink.php') !== -1) {
+			if (link.indexOf('/permalink.php') !== -1 || link.indexOf('/permalink/') !== -1) {
 				return 'post';
 			}
-			if (link.indexOf('/photo.php') !== -1) {
+			if (link.indexOf('/photo.php') !== -1 || link.indexOf('/photos/') !== -1) {
 				return 'post';
 			}
 			if (link.indexOf('story_fbid=') !== -1) {
