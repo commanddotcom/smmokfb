@@ -1,2 +1,2 @@
-var $_http = 'http';
+var $_http = 'https';
 var $_host = 'smmok-fb.ru';
